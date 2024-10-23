@@ -79,10 +79,10 @@ function update() {
 	return p.y > 102;
   });*/
   
-   if (box(pins, 3).isColliding.rect.black && p !== cord.pin) {
+   if (box(pins, 3).isColliding.rect.black && pins !== cord.pin) {
       //nextPin = p;
 	  play("explosion");
-	  addScore(10);
+	  addScore(10, cord.pin);
    }
   
   /*if (nextPin != null) {
