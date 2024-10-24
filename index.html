@@ -69,7 +69,7 @@ function update() {
 	p.y += scr;
     if (box(p, 3).isColliding.rect.black && p !== cord.pin) {
       //nextPin = p;
-	  cord.pin.y -= 2;
+	  cord.pin.y -= 4/difficulty;
 	  play("explosion");
 	  addScore(10, cord.pin.y);
     }
